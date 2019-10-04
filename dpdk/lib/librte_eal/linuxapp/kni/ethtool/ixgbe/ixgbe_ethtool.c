@@ -1743,7 +1743,7 @@ skip_loopback:
 
 		clear_bit(__IXGBE_TESTING, &adapter->state);
 		if (if_running)
-			dev_open(netdev);
+			dev_open(netdev, NULL);
 	} else {
 		e_info(hw, "online testing starting\n");
 		/* Online tests */
